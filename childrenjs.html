@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>welcome to my mangal murti appartment</h1>
+      <div class="child">first child</div>
+      <div class="child">second child</div>
+      <div class="child">third child</div>
+      <div class="child">fourth child</div>
+    </div>
+  </body>
+  <script>
+    let a = document.querySelector(".container");
+    let nodeName = a.childNodes[1].nodeName;
+    let nodeType = a.childNodes[1].nodeType;
+    console.log(nodeName);
+    // console.log(nodeType);
+    // console.log(a.firstChild);
+    // console.log(a.firstElementChild);
+    // console.log(a.lastChild);
+    // console.log(a.lastElementChild);
+    // console.log(a.childElementCount);
+
+    console.log(a.firstElementChild.parentNode);
+    console.log(
+      a.firstElementChild.nextElementSibling.nextElementSibling
+        .nextElementSibling
+    );
+  </script>
+</html>
